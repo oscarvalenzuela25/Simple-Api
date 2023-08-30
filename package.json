@@ -1,0 +1,31 @@
+{
+  "name": "testapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "devel": "nodemon app.js",
+    "start": "node app.js",
+    "db:create:migration": "sequelize-cli migration:generate --config=./config/database.js",
+    "db:migrate": "sequelize-cli db:migrate --config=./config/database.js",
+    "db:migrate:status": "sequelize-cli db:migrate:status --config=./config/database.js",
+    "db:undo": "sequelize-cli db:migrate:undo --config=./config/database.js",
+    "db:undo:all": "sequelize-cli db:migrate:undo:all --config=./config/database.js"
+  },
+  "author": "Oscar Valenzuela",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "joi": "^17.3.0",
+    "jwt-simple": "^0.5.6",
+    "mariadb": "^2.5.2",
+    "moment": "^2.29.1",
+    "nodemon": "^2.0.7",
+    "sequelize": "^6.5.0",
+    "sequelize-cli": "^6.2.0"
+  }
+}

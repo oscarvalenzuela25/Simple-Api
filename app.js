@@ -14,7 +14,7 @@ app.use(express.json());
 app.use(cors());
 
 // Rutas
-app.use('/api', routes);
+app.use('/', routes);
 
 app.listen(port, () => console.log(`Aplicacion hosteada en el puerto ${port}`));
 
